@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="skills-page">
+	<div class="container">
+		<div class="row">
+			{% block preskill%}{% endblock %}
+			{% block skill_content %}{% endblock %}
+			{% block post_skill%}{% endblock %}
+		</div>
+	</div>
+</div>
+{% endblock %}

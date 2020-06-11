@@ -1,0 +1,61 @@
+{% extends "skills/skill_base.html" %}
+{% load humanize %}
+
+{% block pre_skill_content %}
+<div class="col-md-4">
+	{% if request.user.is_authenticated %}
+	<div class="card card-with-shadow">
+		<div class="content">
+			<h5 class="title">Your Skills</h5>
+			<ul class="list-unstyled">
+				{# {% get_user_groups as user_groups %}#}
+				{% comment %} {% for member_group in get_user_groups %}
+				<li class="group li-with-bullet">
+					<a href="{% url 'groups:single' slug=member_group.group.slug %}">{{ member_group.group.name }}</a>
+				</li>
+				{% endfor %} {% endcomment %}
+
+			</ul>
+		</div>
+	</div>
+	{% endif %}
+	<div class="card card-with-shadow">
+		<div class="content">
+			<h5 class="title">All groups</h5>
+			<ul class="list-unstyled">
+				{# {% get_other_groups as other_groups %}#}
+				{% comment %} {% for other_group in get_other_groups %}
+					<li class="group li-with-bullet"><a href="{% url 'groups:single' slug=other_group.slug %}">{{ other_group.name }}</a></li>
+				{% endfor %} {% endcomment %}
+			</ul>
+			
+
+
+
+		</div>
+	</div>
+</div>
+{% endblock %}
+{% block skill_content %}
+<div class="col-md-8">
+	{% for skill in skill_list %}
+        <div class="skill media">
+            <h3>{{ skill.name|safe }}</h3>
+            <div class="media-body">
+                {% comment %} <strong>{{ skill.user.username }}</strong> {% endcomment %}
+                <h5 class="media-heading">
+                    <span class="skillIq"> {{ skill.upsight_score }} </span>
+                    <span class="linkedin"> {{ skill.linkedin_endorsments }} 
+                    
+                    {% if skill.linkedin_verified %}
+                        <i class="fas fa-calendar-check"></i>
+	                {% endif %}
+                    </span>
+                    
+                    <time class="time">{{ skill.updated_at }}</time>
+                </h5>
+            </div>
+        </div>
+	{% endfor %}
+</div>
+{% endblock %}
