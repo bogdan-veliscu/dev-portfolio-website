@@ -5,5 +5,5 @@ from . import views
 app_name = 'posts'
 
 urlpatterns = [
-    # url(r"^$", views.PostList.as_view(), name="all"),
+    url(r"^$", views.latest_posts, name="all"),
 ]

@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.humanize',
     'skills',
     'home',
-    # 'posts',
+    'posts',
     'projects',
     # 'resume',
     # 'social'
