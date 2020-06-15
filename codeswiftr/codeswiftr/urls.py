@@ -22,7 +22,8 @@ from django.conf.urls.static import static
 urlpatterns = [
     # path('posts/', include("posts.urls", namespace="posts")),
     path('skills/', include("skills.urls", namespace="skills")),
-    path('', include("projects.urls", namespace="projects")),
+    path('', include("home.urls", namespace="home")),
+    path('projects', include("projects.urls", namespace="projects")),
     # path('resume/', include("resume.urls", namespace="resume")),
     # path('social/', include("social.urls", namespace="social")),
     path('admin/', admin.site.urls),

@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.humanize',
     'skills',
+    'home',
     # 'posts',
     'projects',
     # 'resume',
