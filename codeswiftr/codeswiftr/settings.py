@@ -44,6 +44,13 @@ INSTALLED_APPS = [
     'posts',
     'projects',
     'app_header',
+    'app_about',
+    'app_features',
+    'app_screens',
+    'app_download',
+    'pricing_plans',
+    'testimonials',
+    'contact_us',
     # 'resume',
     # 'social'
 ]
