@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'home',
     'posts',
     'projects',
+    'app_header',
     # 'resume',
     # 'social'
 ]

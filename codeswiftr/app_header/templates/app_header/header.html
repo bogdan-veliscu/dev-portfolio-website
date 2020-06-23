@@ -1,0 +1,23 @@
+     {% load static %}
+    <!-- slider area start -->
+    <section class="slider-area" id="home">
+        <div class="container">
+            <div class="slider-content d-flex flex-center">
+                <div class="col-md-8 col-sm-9 col-xs-12 d-flex flex-center">
+                    <div class="slider-nner">
+                        <h2>{{app.title}}</h2>
+                        <p>{{app.description}}</p>
+                        <div class="btn-area">
+                            <a href="{{app.action_url}}">{{app.action_title}}</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 hidden-sm hidden-xs">
+                    <div class="slider-m-img">
+                        <img src="{{ app.image.url }}" alt="mobile app image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- slider area end -->
