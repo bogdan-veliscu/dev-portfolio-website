@@ -6,4 +6,4 @@ from .models import AppLanding
 def homepage(request):
     app = AppLanding.objects.all()[:1].get()
     print(app.version, app.header.title)
-    return render(request, 'home/base.html', {'app': app.header, 'main': app})
+    return render(request, 'home/base.html', {'app': app.header, 'main': app, 'download_info': app.download_info})

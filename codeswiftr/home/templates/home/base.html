@@ -54,7 +54,7 @@
                                     <li><a href="#features">Features</a></li>
                                     <li><a href="#screenshot">Screenshot</a></li>
                                     <li><a href="#download">download</a></li>
-                                    <li><a href="#pricing">Pricing</a></li>
+                                    {% comment %} <li><a href="#pricing">Pricing</a></li> {% endcomment %}
                                     <li><a href="#review">Review</a></li>
                                     <li><a href="#contact">Contact</a></li>
                                 </ul>
@@ -76,7 +76,7 @@
     {% include "app_screens/screens.html"  with screens=screens %}
     
     {% include "app_download/download.html"  with download=download_info %}
-    {% include "pricing_plans/pricing.html"  with pricing=pricing %}
+    {% comment %} {% include "pricing_plans/pricing.html"  with pricing=pricing %} {% endcomment %}
     {% include "testimonials/testimonials.html"  with testimonials=testimonials %}
     
     {% include "contact_us/contact.html"  with contact=contact_info %}
