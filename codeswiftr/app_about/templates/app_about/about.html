@@ -5,36 +5,24 @@
             <div class="row">
                 <div class="col-md-5 hidden-sm hidden-xs">
                     <div class="about-left-thumb">
-                        <img src="{% static 'img/mobile/about-m-screen.png'%}" alt="mobile screen">
+                        <img src="{{ about.image.url }}" alt="mobile screen">
                     </div>
                 </div>
                 <div class="col-md-6 col-md-offset-1 col-sm-12 col-xs-12">
                     <div class="about-content">
-                        <span>Meet Appson.</span>
-                        <h2>Work the way you live</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetr adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua. enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit</p>
+                        <span>{{about.subtitle}}</span>
+                        <h2>{{about.title}}</h2>
+                        <p>{{about.description}}</p>
                         <div class="about-ft">
+                            {% for feature in about.top_features.all %}
                             <div class="ft-single">
-                                <div class="icon"><i class="fa fa-desktop"></i></div>
+                                <div class="icon"><i class="{{feature.icon}}"></i></div>
                                 <div class="ft-info">
-                                    <h4>Fully Responsive Design.</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do enim ad minim veniam,</p>
+                                    <h4>{{feature.name}}</h4>
+                                    <p>{{feature.description}}</p>
                                 </div>
                             </div>
-                            <div class="ft-single">
-                                <div class="icon"><i class="fa fa-android"></i></div>
-                                <div class="ft-info">
-                                    <h4>Android Platform.</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do enim ad minim veniam,</p>
-                                </div>
-                            </div>
-                            <div class="ft-single">
-                                <div class="icon"><i class="fa fa-headphones"></i></div>
-                                <div class="ft-info">
-                                    <h4>Strategy Solutions.</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do enim ad minim veniam,</p>
-                                </div>
-                            </div>
+                            {% endfor %}
                         </div>
                     </div>
                 </div>

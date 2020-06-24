@@ -3,6 +3,8 @@ from app_header.models import AppDetails
 from django.db.models import OneToOneField
 from app_download.models import DownloadSection
 from app_features.models import MainFeatures
+from app_about.models import AppMission
+
 from django.utils.translation import gettext as _
 
 # Create your models here.
@@ -17,6 +19,8 @@ class AppLanding(models.Model):
         DownloadSection, verbose_name=_("downloads"), on_delete=models.CASCADE)
     features = models.OneToOneField(
         MainFeatures, verbose_name=_("features"), on_delete=models.CASCADE)
+    about_info = models.OneToOneField(
+        AppMission, verbose_name=_("mission"), on_delete=models.CASCADE)
 
     def __str__(self):
         return self.header.title

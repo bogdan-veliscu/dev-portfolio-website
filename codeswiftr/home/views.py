@@ -9,4 +9,6 @@ def homepage(request):
     return render(request, 'home/base.html',
                   {'app': app.header, 'main': app,
                    'download_info': app.download_info,
-                   'features': app.features})
+                   'features': app.features,
+                   'about': app.about_info
+                   })
