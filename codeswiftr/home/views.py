@@ -10,5 +10,6 @@ def homepage(request):
                   {'app': app.header, 'main': app,
                    'download_info': app.download_info,
                    'features': app.features,
-                   'about': app.about_info
+                   'about': app.about_info,
+                   'reviews': app.reviews
                    })

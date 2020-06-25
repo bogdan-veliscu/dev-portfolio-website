@@ -3,20 +3,21 @@
     <section class="testimonial-area ptb--120" id="review">
         <div class="container">
             <div class="section-title text-black">
-                <h2>Testimonial</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+                <h2>{{reviews.title}}</h2>
+                <p>{{reviews.subtitle}}</p>
             </div>
             <div class="row">
                 <div class="testimonial-list owl-carousel">
+                    {% for review in reviews.testimonials.all %}
                     <!-- single item start -->
                     <div class="testimonial-item">
                         <div class="tauthor-meta">
                             <div class="author-thumb">
-                                <img src="{% static 'img/author/author1.jpg'%}" alt="author image">
+                                <img src="{{review.avatar.url}}" alt="author image">
                             </div>
                             <div class="author-info">
-                                <h4>John Deo</h4>
-                                <span>CEO Of iphone</span>
+                                <h4>{{review.name}}</h4>
+                                <span>{{review.title}}</span>
                                 <div class="review-stasr">
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
@@ -27,56 +28,11 @@
                             </div>
                         </div>
                         <div class="tauthor-text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do smod tempor incididunt ut labore et dolore magna aliqua. enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+                            <p>{{review.content}}</p>
                         </div>
                     </div>
                     <!-- single item end -->
-                    <!-- single item start -->
-                    <div class="testimonial-item">
-                        <div class="tauthor-meta">
-                            <div class="author-thumb">
-                                <img src="{% static 'img/author/author2.jpg'%}" alt="author image">
-                            </div>
-                            <div class="author-info">
-                                <h4>Maria Hedge</h4>
-                                <span>CEO Of iphone</span>
-                                <div class="review-stasr">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tauthor-text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do smod tempor incididunt ut labore et dolore magna aliqua. enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
-                        </div>
-                    </div>
-                    <!-- single item end -->
-                    <!-- single item start -->
-                    <div class="testimonial-item">
-                        <div class="tauthor-meta">
-                            <div class="author-thumb">
-                                <img src="{% static 'img/author/author1.jpg'%}" alt="author image">
-                            </div>
-                            <div class="author-info">
-                                <h4>John Deo</h4>
-                                <span>CEO Of iphone</span>
-                                <div class="review-stasr">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tauthor-text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do smod tempor incididunt ut labore et dolore magna aliqua. enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
-                        </div>
-                    </div>
-                    <!-- single item end -->
+                    {% endfor %}
                 </div>
             </div>
         </div>
