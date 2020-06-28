@@ -5,6 +5,7 @@ from app_download.models import DownloadSection
 from app_features.models import MainFeatures
 from app_about.models import AppMission
 from testimonials.models import TestimonialsSection
+from app_screens.models import AppScreens
 
 from django.utils.translation import gettext as _
 
@@ -24,6 +25,8 @@ class AppLanding(models.Model):
         AppMission, verbose_name=_("mission"), on_delete=models.CASCADE)
     reviews = models.OneToOneField(
         TestimonialsSection, verbose_name=_("reviews"), on_delete=models.CASCADE)
+    screens = models.OneToOneField(
+        AppScreens, verbose_name=_("screens"), on_delete=models.CASCADE)
 
     def __str__(self):
         return self.header.title

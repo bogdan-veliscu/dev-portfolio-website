@@ -3,17 +3,14 @@
     <section class="screen-slider-area ptb--120" id="screenshot">
         <div class="container">
             <div class="section-title text-black">
-                <h2>Screenshots</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+                <h2>{{screens.title}}</h2>
+                <p>{{screens.subtitle}}</p>
             </div>
             <div class="row">
                 <div class="screen-slider owl-carousel">
-                    <img src="{% static 'img/mobile/screen-slider/screen1.jpg'%}" alt=" mobile screen">
-                    <img src="{% static 'img/mobile/screen-slider/screen2.jpg'%}" alt=" mobile screen">
-                    <img src="{% static 'img/mobile/screen-slider/screen3.jpg'%}" alt=" mobile screen">
-                    <img src="{% static 'img/mobile/screen-slider/screen4.jpg'%}" alt=" mobile screen">
-                    <img src="{% static 'img/mobile/screen-slider/screen1.jpg'%}" alt=" mobile screen">
-                    <img src="{% static 'img/mobile/screen-slider/screen3.jpg'%}" alt=" mobile screen">
+                  {% for screen in screens.screens.all %}
+                    <img src="{{screen.image.url}}" alt=" mobile screen">
+                {% endfor %}
                 </div>
             </div>
         </div>

@@ -11,5 +11,6 @@ def homepage(request):
                    'download_info': app.download_info,
                    'features': app.features,
                    'about': app.about_info,
-                   'reviews': app.reviews
+                   'reviews': app.reviews,
+                   'screens': app.screens
                    })
