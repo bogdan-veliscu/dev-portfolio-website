@@ -22,13 +22,36 @@
                     </div>
                     <div class="contact-form">
                         <h4 class="contact-title">Get In Touch</h4>
-                        <form action="#">
+                        {% comment %} <form method="post">
+                        {% csrf_token %}
                             <input type="text" class="input" name="name" placeholder="Your Name *">
                             <input type="email" class="input" name="email" placeholder="Your Email address*">
                             <input type="text" class="input" name="subject" placeholder="Your Subject*">
                             <input type="text" class="input" name="name" placeholder="Your Message*">
                             <textarea name="msg" class="input" id="msg" placeholder="Your Message*"></textarea>
                             <input type="submit" id="send" value="Send">
+                        </form> {% endcomment %}
+
+                        {% load widget_tweaks %}
+
+                        <form action="/" method="post">
+                        {% csrf_token %}
+
+                        {% for hidden_field in form.hidden_fields %}
+                            {{ hidden_field }}
+                        {% endfor %}
+
+                        {% for field in form.visible_fields %}
+                            <div class="form-group">
+                            {{ field.label_tag }}
+                            {% render_field field class="input" %}
+                            {% if field.help_text %}
+                                <small class="form-text text-muted">{{ field.help_text }}</small>
+                            {% endif %}
+                            </div>
+                        {% endfor %}
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
                         </form>
                     </div>
                 </div>

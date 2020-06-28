@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 {% load static %}
+{% load widget_tweaks %}
 <head>
     <!--- Basic Page Needs  -->
     <meta charset="utf-8">
@@ -78,10 +79,10 @@
     {% include "app_download/download.html"  with download=download_info %}
     {% comment %} {% include "pricing_plans/pricing.html"  with pricing=pricing %} {% endcomment %}
     {% include "testimonials/testimonials.html"  with testimonials=testimonials %}
-    
     {% include "contact_us/contact.html"  with contact=contact_info %}
-    
+     
  
+
 
     <!-- footer area start -->
     <footer>
