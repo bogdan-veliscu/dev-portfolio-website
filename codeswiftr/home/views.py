@@ -4,6 +4,10 @@ from .models import AppLanding
 from contact_us.forms import ContactForm
 
 
+
+def demo(request):
+    return render(request, 'home/landing.html')
+    
 def homepage(request):
 
     app = AppLanding.objects.all()[:1].get()
