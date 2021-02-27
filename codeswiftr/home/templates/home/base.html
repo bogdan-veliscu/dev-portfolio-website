@@ -12,6 +12,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
     <link rel="stylesheet" href="{% static 'css/jquery-ui.css'%}">
+    <link rel="stylesheet" href="{% static 'css/all.css'%}">
     <link rel="stylesheet" href="{% static 'css/font-awesome.min.css'%}">
     <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css'%}">
     <link rel="stylesheet" href="{% static 'css/slicknav.min.css'%}">
@@ -19,13 +20,33 @@
     <link rel="stylesheet" href="{% static 'css/style.css'%}">
     <link rel="stylesheet" href="{% static 'css/responsive.css'%}">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/png" href="{% static 'img/icon/favicon.ico' %}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/icon/favicon.png' %}">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
+
+    <meta property="og:title" content="Download Mum Chef">
+    <meta property="og:description" content="Feed your entire family while weaning a baby">
+    <meta property="og:image" content="https://mumchef.io/media/img/IMG_5876.jpg">
+    <meta property="og:url" content="https://mumchef.io">
+
+    <meta name="twitter:card" content="summary_large_image">
+
+
+    <!--  Non-Essential, But Recommended -->
+
+    <meta property="og:site_name" content="Mum Chef by codeswiftr">
+    <meta name="twitter:image:alt" content="Mum Chef mobile app screenshot">
+
+
+    <!--  Non-Essential, But Required for Analytics -->
+
+    <meta property="fb:app_id" content="924605054635992" />
+    <meta name="twitter:site" content="@codeswiftr">
+
 </head>
 
 <body>
@@ -54,9 +75,9 @@
                                     <li><a href="#about">About</a></li>
                                     <li><a href="#features">Features</a></li>
                                     <li><a href="#screenshot">Screenshot</a></li>
-                                    <li><a href="#download">download</a></li>
+                                    <li><a href="#download">Download</a></li>
                                     {% comment %} <li><a href="#pricing">Pricing</a></li> {% endcomment %}
-                                    <li><a href="#review">Review</a></li>
+                                    {% comment %} <li><a href="#review">Review</a></li> {% endcomment %}
                                     <li><a href="#contact">Contact</a></li>
                                 </ul>
                             </nav>
@@ -78,7 +99,7 @@
     
     {% include "app_download/download.html"  with download=download_info %}
     {% comment %} {% include "pricing_plans/pricing.html"  with pricing=pricing %} {% endcomment %}
-    {% include "testimonials/testimonials.html"  with testimonials=testimonials %}
+    {% comment %} {% include "testimonials/testimonials.html"  with testimonials=testimonials %} {% endcomment %}
     {% include "contact_us/contact.html"  with contact=contact_info %}
      
  
@@ -90,10 +111,10 @@
             <div class="container">
                 <div class="footer-inner">
                     <ul class="fsocial">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://www.facebook.com/codeswiftr"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/codeswiftr"><i class="fa fa-twitter"></i></a></li>
+                        {% comment %} <li><a href="https://www.instagram.com/codeswiftr/"><i class="fa fa-instagram"></i></a></li> {% endcomment %}
+                        <li><a href="https://www.linkedin.com/company/codeswiftr"><i class="fa fa-linkedin"></i></a></li>
                     </ul>
                     <p class="copy-right"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Developed with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://codeswiftr.com" target="_blank">Codeswiftr</a>

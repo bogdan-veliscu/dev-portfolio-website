@@ -36,16 +36,19 @@
        2.15 Footer Area
    3. Blog Details
     
+e   
+    -----------------------------------------------------------------------------------*/
 
------------------------------------------------------------------------------------*/
+    
+    /*----------------------------------------*/
 
-
-/*----------------------------------------*/
-
-
-/*  1. Theme default CSS
-/*----------------------------------------*/
-
+    
+    /*  1. Theme default CSS
+    /*----------------------------------------*/
+    
+pre {
+    white-space: pre-wrap;
+}
 
 /*google font*/
 
@@ -168,7 +171,7 @@ font-family: 'Open Sans', sans-serif;
 .menu-area {}
 
 .logo {
-    margin-top: -20px;
+    margin-top: 8px;
     margin-left: 100px;
 }
 
@@ -1105,7 +1108,7 @@ END Map Area
     padding: 90px 0px 100px;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
     position: relative;
-    margin-top: -100px;
+    margin-top: -10px;
 }
 
 .contact-flex-container {

@@ -7,7 +7,15 @@ from contact_us.forms import ContactForm
 
 def demo(request):
     return render(request, 'home/landing.html')
-    
+
+def terms(request):
+    app = AppLanding.objects.all()[:1].get()
+    return render(request, 'home/terms.html', {'app':app.header})
+
+def privacy(request):
+    app = AppLanding.objects.all()[:1].get()
+    return render(request, 'home/privacy.html', {'app':app.header})
+
 def homepage(request):
 
     app = AppLanding.objects.all()[:1].get()

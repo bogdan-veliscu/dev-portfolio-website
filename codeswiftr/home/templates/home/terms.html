@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+{% load widget_tweaks %}
+<head>
+    <!--- Basic Page Needs  -->
+    <meta charset="utf-8">
+    <title>{{app.title}}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Mobile Specific Meta  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/jquery-ui.css'%}">
+    <link rel="stylesheet" href="{% static 'css/all.css'%}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/slicknav.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/typography.css'%}">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css'%}">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/icon/favicon.png' %}">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    <meta property="og:title" content="Download Mum Chef">
+    <meta property="og:description" content="Feed your entire family while weaning a baby">
+    <meta property="og:image" content="https://mumchef.io/media/img/IMG_5876.jpg">
+    <meta property="og:url" content="https://mumchef.io">
+
+    <meta name="twitter:card" content="summary_large_image">
+
+
+    <!--  Non-Essential, But Recommended -->
+
+    <meta property="og:site_name" content="Mum Chef by codeswiftr">
+    <meta name="twitter:image:alt" content="Mum Chef mobile app screenshot">
+
+
+    <!--  Non-Essential, But Required for Analytics -->
+
+    <meta property="fb:app_id" content="924605054635992" />
+    <meta name="twitter:site" content="@codeswiftr">
+
+</head>
+
+<body>
+    <!-- preloader area start -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+    <!-- preloader area end -->
+    <!-- header area start -->
+    <header class="header-area">
+        <div class="container">
+            <div class="row">
+                <div class="menu-area">
+                    <div class="col-md-3 col-sm-6 col-xs-6">
+                        <div class="logo">
+                            <a href="#">
+                            <img src="{{logo.url}}" alt="MumChef - Baby Led Weaning made easy">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-9 hidden-xs hidden-sm">
+                        <div class="main-menu">
+                            <nav class="nav-menu">
+                                <ul>
+                                    <li class="active"><a href="/#home">Home</a></li>
+                                    <li><a href="/#about">About</a></li>
+                                    <li><a href="/#features">Features</a></li>
+                                    <li><a href="/#screenshot">Screenshot</a></li>
+                                    <li><a href="/#download">Download</a></li>
+                                    {% comment %} <li><a href="#pricing">Pricing</a></li> {% endcomment %}
+                                    {% comment %} <li><a href="#review">Review</a></li> {% endcomment %}
+                                    <li><a href="/#contact">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xs-12 visible-sm visible-xs">
+                        <div class="mobile_menu"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    {% include "app_header/header.html"  with app=app %}
+    <pre>
+
+
+
+
+
+
+
+
+
+Terms and conditions
+
+These terms and conditions ("Agreement") set forth the general terms and conditions of your use of the "Mum Chef" mobile application ("Mobile Application" or "Service") and any of its related products and services (collectively, "Services"). This Agreement is legally binding between you ("User", "you" or "your") and this Mobile Application developer ("Operator", "we", "us" or "our"). By accessing and using the Mobile Application and Services, you acknowledge that you have read, understood, and agree to be bound by the terms of this Agreement. If you are entering into this Agreement on behalf of a business or other legal entity, you represent that you have the authority to bind such entity to this Agreement, in which case the terms "User", "you" or "your" shall refer to such entity. If you do not have such authority, or if you do not agree with the terms of this Agreement, you must not accept this Agreement and may not access and use the Mobile Application and Services. You acknowledge that this Agreement is a contract between you and the Operator, even though it is electronic and is not physically signed by you, and it governs your use of the Mobile Application and Services.
+
+Accounts and membership
+If you create an account in the Mobile Application, you are responsible for maintaining the security of your account and you are fully responsible for all activities that occur under the account and any other actions taken in connection with it. We may, but have no obligation to, monitor and review new accounts before you may sign in and start using the Services. You must immediately notify us of any unauthorized uses of your account or any other breaches of security. We will not be liable for any acts or omissions by you, including any damages of any kind incurred as a result of such acts or omissions. We may suspend, disable, or delete your account (or any part thereof) if we determine that you have violated any provision of this Agreement or that your conduct or content would tend to damage our reputation and goodwill. If we delete your account for the foregoing reasons, you may not re-register for our Services. We may block your email address and Internet protocol address to prevent further registration.
+
+User content
+We do not own any data, information or material (collectively, "Content") that you submit in the Mobile Application in the course of using the Service. You shall have sole responsibility for the accuracy, quality, integrity, legality, reliability, appropriateness, and intellectual property ownership or right to use of all submitted Content. We may, but have no obligation to, monitor and review the Content in the Mobile Application submitted or created using our Services by you. You grant us permission to access, copy, distribute, store, transmit, reformat, display and perform the Content of your user account solely as required for the purpose of providing the Services to you. Unless specifically permitted by you, your use of the Mobile Application and Services does not grant us the license to use, reproduce, adapt, modify, publish or distribute the Content created by you or stored in your user account for commercial, marketing or any similar purpose.
+
+Backups
+We are not responsible for the Content residing in the Mobile Application. In no event shall we be held liable for any loss of any Content. It is your sole responsibility to maintain appropriate backup of your Content. Notwithstanding the foregoing, on some occasions and in certain circumstances, with absolutely no obligation, we may be able to restore some or all of your data that has been deleted as of a certain date and time when we may have backed up data for our own purposes. We make no guarantee that the data you need will be available.
+
+Links to other resources
+Although the Mobile Application and Services may link to other resources (such as websites, mobile applications, etc.), we are not, directly or indirectly, implying any approval, association, sponsorship, endorsement, or affiliation with any linked resource, unless specifically stated herein. We are not responsible for examining or evaluating, and we do not warrant the offerings of, any businesses or individuals or the content of their resources. We do not assume any responsibility or liability for the actions, products, services, and content of any other third parties. You should carefully review the legal statements and other conditions of use of any resource which you access through a link in the Mobile Application and Services. Your linking to any other off-site resources is at your own risk.
+
+Third-Party Services
+The Mum Chef may display or permit linking or other access to or use of third-party content, promotions, websites, apps, services and resources (collectively “Third-Party Services”) that are not under CodeSwiftr's control. This may include the opportunity for you to link your Mum Chef account, Mum Chef data, or the Mum Chef Service with Third-Party Services. We provide these links only as a convenience and are not responsible for the products, services, or other content that are available from Third-Party Services. You acknowledge that these Terms and the Mum Chef Privacy Policy do not apply to any Third-Party Services. You are responsible for reading and understanding the terms and conditions and privacy policy that applies to your use of any Third-Party Services.
+
+Prohibited uses
+In addition to other terms as set forth in the Agreement, you are prohibited from using the Mobile Application and Services or Content: (a) for any unlawful purpose; (b) to solicit others to perform or participate in any unlawful acts; (c) to violate any international, federal, provincial or state regulations, rules, laws, or local ordinances; (d) to infringe upon or violate our intellectual property rights or the intellectual property rights of others; (e) to harass, abuse, insult, harm, defame, slander, disparage, intimidate, or discriminate based on gender, sexual orientation, religion, ethnicity, race, age, national origin, or disability; (f) to submit false or misleading information; (g) to upload or transmit viruses or any other type of malicious code that will or may be used in any way that will affect the functionality or operation of the Mobile Application and Services, third party products and services, or the Internet; (h) to spam, phish, pharm, pretext, spider, crawl, or scrape; (i) for any obscene or immoral purpose; or (j) to interfere with or circumvent the security features of the Mobile Application and Services, third party products and services, or the Internet. We reserve the right to terminate your use of the Mobile Application and Services for violating any of the prohibited uses.
+
+Intellectual property rights
+"Intellectual Property Rights" means all present and future rights conferred by statute, common law or equity in or in relation to any copyright and related rights, trademarks, designs, patents, inventions, goodwill and the right to sue for passing off, rights to inventions, rights to use, and all other intellectual property rights, in each case whether registered or unregistered and including all applications and rights to apply for and be granted, rights to claim priority from, such rights and all similar or equivalent rights or forms of protection and any other results of intellectual activity which subsist or will subsist now or in the future in any part of the world. This Agreement does not transfer to you any intellectual property owned by the Operator or third parties, and all rights, titles, and interests in and to such property will remain (as between the parties) solely with the Operator. All trademarks, service marks, graphics and logos used in connection with the Mobile Application and Services, are trademarks or registered trademarks of the Operator or its licensors. Other trademarks, service marks, graphics and logos used in connection with the Mobile Application and Services may be the trademarks of other third parties. Your use of the Mobile Application and Services grants you no right or license to reproduce or otherwise use any of the Operator or third party trademarks.
+
+Changes and amendments
+We reserve the right to modify this Agreement or its terms relating to the Mobile Application and Services at any time, effective upon posting of an updated version of this Agreement in the Mobile Application. When we do, we will revise the updated date at the bottom of this page. Continued use of the Mobile Application and Services after any such changes shall constitute your consent to such changes. Policy was created with WebsitePolicies.
+
+Automatically Renewing Subscriptions
+Mum Chef provides two types of subscriptions: monthly and annual. Your subscription payment will be charged to iTunes Account at confirmation of purchase. Your Subscription term may vary, for example, with monthly or annual automatic renewal terms (a “Subscription Term”), as described in the course of your transaction. Your Subscription will automatically renew for additional Subscription Terms as long as your Subscription continues, until you cancel it or we suspend or stop providing the Subscription in accordance with our Terms of Service. Unless otherwise indicated by us, you will be charged prior to, or at the beginning of, each renewal term.
+
+Subscription Cancellation. 
+You may cancel your Subscription at any time. Your cancellation will take effect at the end of the current Subscription Term.
+
+No Refunds on Subscriptions
+When you cancel a Subscription, you cancel only future charges for your Subscription. You will not receive a refund for the current Subscription Term you paid for, but you will continue to have full access to that Subscription until the end of that current Subscription Term. At any time for any reason, we may provide a refund, discount, or other consideration (“credits”) to some or all of our users. The amount and form of such credits, and the decision to provide them, are at our sole and absolute discretion. The provision of credits in one instance does not entitle you to credits in the future for similar instances, nor does it obligate us to provide credits in the future.
+
+Free Trials. From time to time, we may offer free trials of certain Subscriptions for specified periods of time without payment. If we offer you a free trial, the specific terms of your free trial will be provided in the marketing materials describing the particular trial. Once your free trial ends, we (or our third-party payment processor) will begin billing your designated payment method on a recurring basis for your Subscription (plus any applicable taxes and other charges) for as long as your Subscription continues, unless you cancel your Subscription prior to the end of your free trial. To avoid any charges, you must cancel your Subscription before the end of your free trial period. 
+
+Price Changes
+We reserve the right to adjust pricing for our Paid Services or any components thereof in any manner and at any time.
+
+Acceptance of these terms
+You acknowledge that you have read this Agreement and agree to all its terms and conditions. By accessing and using the Mobile Application and Services you agree to be bound by this Agreement. If you do not agree to abide by the terms of this Agreement, you are not authorized to access or use the Mobile Application and Services.
+
+Contacting us
+If you would like to contact us to understand more about this Agreement or wish to contact us concerning any matter relating to it, you may send an email to bogdan@codeswiftr.com
+
+This document was last updated on February 4, 2021
+    </pre>
+    <!-- footer area start -->
+    <footer>
+        <div class="footer-area bg-theme ptb--50">
+            <div class="container">
+                <div class="footer-inner">
+                    <ul class="fsocial">
+                        <li><a href="https://www.facebook.com/codeswiftr"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/codeswiftr"><i class="fa fa-twitter"></i></a></li>
+                        {% comment %} <li><a href="https://www.instagram.com/codeswiftr/"><i class="fa fa-instagram"></i></a></li> {% endcomment %}
+                        <li><a href="https://www.linkedin.com/company/codeswiftr"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                    <p class="copy-right"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Developed with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://codeswiftr.com" target="_blank">Codeswiftr</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer area end -->
+
+    
+    <!-- Scripts -->
+    <script src="{% static 'js/jquery-3.2.0.min.js' %}"></script>
+    <script src="{% static 'js/jquery-ui.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.slicknav.min.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/raindrops.js' %}"></script>
+    <script src="{% static 'js/theme.js' %}"></script>
+</body>
+
+</html>

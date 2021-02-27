@@ -24,7 +24,7 @@ class AppLanding(models.Model):
     about_info = models.OneToOneField(
         AppMission, verbose_name=_("mission"), on_delete=models.CASCADE)
     reviews = models.OneToOneField(
-        TestimonialsSection, verbose_name=_("reviews"), on_delete=models.CASCADE)
+        TestimonialsSection, verbose_name=_("reviews"), on_delete=models.CASCADE, null=True, blank=True)
     screens = models.OneToOneField(
         AppScreens, verbose_name=_("screens"), on_delete=models.CASCADE)
 
